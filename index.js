@@ -1,8 +1,4 @@
 let p = 1;
-const width = window.innerWidth;
-const height = window.innerHeight;
-const container = document.querySelector('section');
-const html = document.querySelector('html');
 window.onload = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
