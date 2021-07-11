@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
 }
 
 ::-webkit-scrollbar {
@@ -17,10 +20,31 @@ section {
 iframe {
   margin: 2vh 2vw;
   width: 46vw;
-  height: 96vh;
+  height: 90vh;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.containerSec {
+  display: flex;
+}
+.container * {
+  margin: 5px 20px;
+}
+button {
+  padding: 0 8px;
+  font-size: 1rem;
 }
 
 @media (max-width: 700px) {
+  html {
+    font-size: 80%;
+  }
   section {
     display: flex;
     flex-wrap: nowrap;
@@ -29,6 +53,24 @@ iframe {
   iframe {
     margin: 2vh 2vw;
     width: 96vw;
-    height: 96vh;
+    height: 90vh;
+  }
+  .webLink {
+    text-align: center;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+  }
+  .container * {
+    margin: 5px 10px;
+  }
+  button {
+    padding: 0 4px;
+    font-size: 1rem;
   }
 } ;
